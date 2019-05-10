@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/1.0/hola")
+@RequestMapping
 public class HolaRestDemoSwaggerController {
   @GetMapping("/api/1.0/hola")
   public String hola() {
