@@ -2,6 +2,7 @@ package com.exampleswagger.configuracion;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -20,6 +21,7 @@ public class SwaggerConfig {
    * 
    * @return Docket.
    */
+  @Bean
   public Docket productApi() {
     return new Docket(DocumentationType.SWAGGER_2).select()
         .apis(RequestHandlerSelectors.basePackage("com.exampleswagger"))

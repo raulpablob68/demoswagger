@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/rest/hola")
+@RequestMapping("/api/1.0/hola")
 public class HolaRestDemoSwaggerController {
-  @GetMapping
+  @GetMapping("/api/1.0/hola")
   public String hola() {
     return "Hola.";
   }
   
-  @PostMapping("/post")
+  @PostMapping("/api/1.0/hola")
   public String holaPost(@RequestBody final String hola) {
     return hola;
   }
   
-  @PutMapping("/put")
+  @PutMapping("/api/1.0/hola")
   public String holaPut(@RequestBody final String hola) {
     return hola;
   }
